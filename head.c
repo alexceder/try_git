@@ -1,4 +1,4 @@
-// This isan implementation of a declaration.
+// This is an implementation of a declaration.
 
 #include <stdio.h>
 
