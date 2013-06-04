@@ -1,8 +1,6 @@
-#include <stdio.h>
+#include "head.h"
 
 int main(int argc, char **argv) {
-
-	printf("hello, dude");
-
+	stupidFunc("This is a string literal!");
 	return 0;
 }
