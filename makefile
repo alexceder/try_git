@@ -10,13 +10,16 @@ CFLAGS = -Wall
 # Files:
 FILES = test.c head.c
 
+# Binary folder:
+BINFOLD = bin/
+
 all: compile
 
 compile: $(FILES)
-	$(CC) $(CFLAGS) $(FILES) -o test
+	$(CC) $(CFLAGS) $(FILES) -o $(BINFOLD)test
 
 run:
-	./test
+	./$(BINFOLD)test
 
 .PHONY: clean
 
