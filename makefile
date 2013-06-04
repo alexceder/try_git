@@ -13,15 +13,18 @@ FILES = test.c head.c
 # Binary folder:
 BINFOLD = bin/
 
+# Binary name:
+BINNAME = test
+
 all: compile
 
 compile: $(FILES)
-	$(CC) $(CFLAGS) $(FILES) -o $(BINFOLD)test
+	$(CC) $(CFLAGS) $(FILES) -o $(BINFOLD)$(BINNAME)
 
 run:
-	./$(BINFOLD)test
+	./$(BINFOLD)$(BINNAME)
 
 .PHONY: clean
 
 clean:
-	rm test
+	rm $(BINFOLD)*
