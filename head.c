@@ -3,5 +3,5 @@
 #include <stdio.h>
 
 void stupidFunc(const char * str) {
-	puts(str);
+    puts(str);
 }
