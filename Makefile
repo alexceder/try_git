@@ -5,7 +5,7 @@
 CC = gcc
 
 # Flags:
-CFLAGS = -Wall
+CFLAGS = -Wall -pedantic -std=c99
 
 # Files:
 FILES = test.c head.c
@@ -17,14 +17,19 @@ BINFOLD = bin/
 BINNAME = test
 
 all: compile
+.PHOY: all
 
-compile: $(FILES)
+#compile: $(FILES)
+compile: 
 	$(CC) $(CFLAGS) $(FILES) -o $(BINFOLD)$(BINNAME)
+.PHONY: compile
 
 run:
 	./$(BINFOLD)$(BINNAME)
-
-.PHONY: clean
+.PHONY: run
 
 clean:
 	rm $(BINFOLD)*
+
+.PHONY: clean
+
