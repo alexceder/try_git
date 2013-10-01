@@ -17,10 +17,10 @@ BINFOLD = bin/
 BINNAME = test
 
 all: compile
-.PHOY: all
+.PHONY: all
 
 #compile: $(FILES)
-compile: 
+compile: $(FILES)
 	$(CC) $(CFLAGS) $(FILES) -o $(BINFOLD)$(BINNAME)
 .PHONY: compile
 
@@ -30,6 +30,5 @@ run:
 
 clean:
 	rm $(BINFOLD)*
-
 .PHONY: clean
 
