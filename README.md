@@ -6,3 +6,4 @@
 > trying to get smarter.
 
 This is another string duude.
+This should become a conflict.
