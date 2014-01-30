@@ -6,3 +6,5 @@ This is a string that I just added.
 >
 > This is my stupid lab, where I do stupid things because im stupid,
 > trying to get smarter.
+
+HELLO MOTOROLA!
