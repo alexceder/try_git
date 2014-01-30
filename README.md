@@ -5,4 +5,4 @@
 > This is my stupid lab, where I do stupid things because im stupid,
 > trying to get smarter.
 
-This should become a conflict.
+HELLO MOTOROLA!
